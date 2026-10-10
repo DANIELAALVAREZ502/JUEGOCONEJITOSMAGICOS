@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ResourceDictionary 
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:JUEGOCONEJITOSMAGICOS">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <Style TargetType="ActivityIndicator">
         <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
@@ -419,31 +418,9 @@
         <Setter Property="Shell.TabBarUnselectedColor" Value="{AppThemeBinding Light={StaticResource Gray900}, Dark={StaticResource Gray200}}" />
     </Style>
 
-    <!-- Plantilla comun: muestra el contenido y anade la barra de
-         navegacion inferior con los botones Regresar y Avanzar. -->
-    <ControlTemplate x:Key="PaginaConNavegacion">
-        <Grid RowDefinitions="*,Auto">
-            <ContentPresenter />
-            <Grid Grid.Row="1" ColumnDefinitions="*,*" ColumnSpacing="12"
-                  Padding="16,10" BackgroundColor="{StaticResource MagicPurpleDark}">
-                <Button Grid.Column="0" Text="Regresar"
-                        Command="{x:Static local:AppNav.Regresar}"
-                        BackgroundColor="{StaticResource MagicGold}"
-                        TextColor="{StaticResource MagicPurpleDark}"
-                        FontAttributes="Bold" CornerRadius="22" HeightRequest="48" />
-                <Button Grid.Column="1" Text="Avanzar"
-                        Command="{x:Static local:AppNav.Avanzar}"
-                        BackgroundColor="{StaticResource MagicGold}"
-                        TextColor="{StaticResource MagicPurpleDark}"
-                        FontAttributes="Bold" CornerRadius="22" HeightRequest="48" />
-            </Grid>
-        </Grid>
-    </ControlTemplate>
-
     <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
         <Setter Property="Shell.NavBarIsVisible" Value="False" />
         <Setter Property="Shell.TabBarIsVisible" Value="False" />
-        <Setter Property="ControlTemplate" Value="{StaticResource PaginaConNavegacion}" />
     </Style>
 
     <Style TargetType="NavigationPage">
