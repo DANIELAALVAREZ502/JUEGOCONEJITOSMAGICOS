@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JUEGOCONEJITOSMAGICOS.AprendizajePage"
+             BackgroundImageSource="arbol_magico.jpg"
+             Title="Aprendizaje">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16">
+
+            <Label Text="Lecciones Aprendidas" Style="{StaticResource Titulo}" />
+
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="12">
+                    <Label Text="Ser solidario une a la comunidad." Style="{StaticResource TextoClaro}" HorizontalOptions="Start" />
+                    <Label Text="Practicar el respeto genera paz." Style="{StaticResource TextoClaro}" HorizontalOptions="Start" />
+                    <Label Text="Ser amable ayuda a crear nuevas amistades." Style="{StaticResource TextoClaro}" HorizontalOptions="Start" />
+                    <Label Text="Agradecer cada pequeno gesto nos hace felices." Style="{StaticResource TextoClaro}" HorizontalOptions="Start" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Image Source="bambi2.png" HeightRequest="130" HorizontalOptions="Center" />
+
+            <Button Text="Ver creditos" Style="{StaticResource BotonMagico}" Clicked="OnCreditosClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

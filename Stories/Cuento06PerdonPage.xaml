@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JUEGOCONEJITOSMAGICOS.Stories.Cuento06PerdonPage"
+             BackgroundImageSource="bosque_noche.jpg"
+             Title="El Valor de Pedir Perdon">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16">
+
+            <Label Text="El Valor de Pedir Perdon" Style="{StaticResource Titulo}" />
+
+            <!-- Cuento 6: pedir perdon -->
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="12">
+                    <Image Source="tambor1.png" HeightRequest="150" HorizontalOptions="Center" />
+                    <Label Text="Tambor rompio sin querer el juguete favorito de Nala. Sintio mucha pena y le pidio perdon con sinceridad. Nala lo abrazo y los dos arreglaron el juguete juntos. Pedir perdon sana el corazon y une a los amigos."
+                           Style="{StaticResource TextoClaro}" />
+                    <Label Text="Valor aprendido: pedir perdon nos ayuda a ser mejores amigos."
+                           TextColor="{StaticResource MagicGold}" FontAttributes="Bold" HorizontalOptions="Center" />
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Controles de narracion por voz -->
+            <HorizontalStackLayout Spacing="12" HorizontalOptions="Center">
+                <Button Text="Escuchar" Style="{StaticResource BotonMenta}" Clicked="OnNarrarClicked" />
+                <Button Text="Detener" Style="{StaticResource BotonRojo}" Clicked="OnStopClicked" />
+            </HorizontalStackLayout>
+
+            <Button Text="Reflexionar" Style="{StaticResource BotonRosa}" Clicked="OnReflexionarClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JUEGOCONEJITOSMAGICOS.LogrosPage"
+             BackgroundImageSource="estrellamagica.png"
+             Title="Logros">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16">
+
+            <Label Text="Mis Logros" Style="{StaticResource Titulo}" />
+            <Label x:Name="LblPuntosTotales" Text="Puntos totales: 0"
+                   TextColor="{StaticResource MagicGold}" FontSize="20"
+                   FontAttributes="Bold" HorizontalOptions="Center" />
+
+            <!-- Lista de logros desbloqueados -->
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout x:Name="StackLogros" Spacing="10">
+                    <Label Text="Aun no tienes logros... Juega para desbloquearlos!"
+                           Style="{StaticResource TextoClaro}" />
+                </VerticalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

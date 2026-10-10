@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JUEGOCONEJITOSMAGICOS.JuegosPage"
+             BackgroundImageSource="flores.jpg"
+             Title="Juegos">
+
+    <VerticalStackLayout Padding="20" Spacing="16" VerticalOptions="Center">
+
+        <Label Text="Zona de Juegos" Style="{StaticResource Titulo}" />
+        <Label Text="Juega y aprende valores al mismo tiempo."
+               Style="{StaticResource Subtitulo}" />
+
+        <!-- Menu de los juegos disponibles -->
+        <Border Style="{StaticResource Tarjeta}">
+            <VerticalStackLayout Spacing="14">
+                <Button Text="Atrapa Estrellas" Style="{StaticResource BotonCielo}" Clicked="OnAtrapaClicked" />
+                <Label Text="Pulsa las estrellas para ganar puntos." Style="{StaticResource TextoClaro}" FontSize="13" />
+                <Button Text="Quiz de Valores" Style="{StaticResource BotonRosa}" Clicked="OnQuizClicked" />
+                <Label Text="Pon a prueba lo que has aprendido." Style="{StaticResource TextoClaro}" FontSize="13" />
+                <Button Text="Juego de Memoria" Style="{StaticResource BotonMenta}" Clicked="OnMemoriaClicked" />
+                <Label Text="Encuentra las parejas de personajes." Style="{StaticResource TextoClaro}" FontSize="13" />
+                <Button Text="Adivina el Personaje" Style="{StaticResource BotonMagico}" Clicked="OnAdivinaClicked" />
+                <Label Text="Adivina quien es por su descripcion." Style="{StaticResource TextoClaro}" FontSize="13" />
+            </VerticalStackLayout>
+        </Border>
+
+    </VerticalStackLayout>
+
+</ContentPage>

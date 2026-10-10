@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JUEGOCONEJITOSMAGICOS.QuizPage"
+             BackgroundImageSource="bosque_color.jpg"
+             Title="Quiz de Valores">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16">
+
+            <Label Text="Quiz de Valores" Style="{StaticResource Titulo}" />
+            <Label x:Name="LblAciertos" Text="Aciertos: 0" TextColor="{StaticResource MagicGold}"
+                   FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
+
+            <!-- Pregunta 1 -->
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="12">
+                    <Label Text="1. ?Que valor representa dar las gracias?" Style="{StaticResource TextoClaro}" />
+                    <Button Text="Gratitud" Style="{StaticResource BotonMagico}" Clicked="OnCorrect1" />
+                    <Button Text="Indiferencia" Style="{StaticResource BotonRojo}" Clicked="OnWrong" />
+                    <Button Text="Envidia" Style="{StaticResource BotonRojo}" Clicked="OnWrong" />
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Pregunta 2 -->
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="12">
+                    <Label Text="2. ?Que hacemos cuando un amigo tiene miedo?" Style="{StaticResource TextoClaro}" />
+                    <Button Text="Nos burlamos" Style="{StaticResource BotonRojo}" Clicked="OnWrong" />
+                    <Button Text="Lo ayudamos y apoyamos" Style="{StaticResource BotonMagico}" Clicked="OnCorrect2" />
+                    <Button Text="Nos vamos" Style="{StaticResource BotonRojo}" Clicked="OnWrong" />
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Pregunta 3 -->
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="12">
+                    <Label Text="3. Compartir la fruta con un amigo demuestra..." Style="{StaticResource TextoClaro}" />
+                    <Button Text="Egoismo" Style="{StaticResource BotonRojo}" Clicked="OnWrong" />
+                    <Button Text="Amabilidad" Style="{StaticResource BotonMagico}" Clicked="OnCorrect3" />
+                    <Button Text="Rabia" Style="{StaticResource BotonRojo}" Clicked="OnWrong" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Button Text="Ver Logros" Style="{StaticResource BotonCielo}" Clicked="OnVerLogrosClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

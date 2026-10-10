@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JUEGOCONEJITOSMAGICOS.PersonajesPage"
+             BackgroundImageSource="bosque.jpg"
+             Title="Personajes">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16">
+
+            <Label Text="Nuestros Personajes" Style="{StaticResource Titulo}" />
+            <Label Text="Toca una tarjeta para conocer a cada habitante del bosque."
+                   Style="{StaticResource Subtitulo}" />
+
+            <!-- Galeria de personajes: 2 columnas y 3 filas -->
+            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto" ColumnSpacing="12" RowSpacing="12">
+
+                <Border Grid.Row="0" Grid.Column="0" Style="{StaticResource TarjetaClara}">
+                    <VerticalStackLayout Spacing="4">
+                        <Image Source="nala1.png" HeightRequest="90" HorizontalOptions="Center" />
+                        <Label Text="Nala" FontAttributes="Bold" TextColor="#4A148C" HorizontalOptions="Center" />
+                        <Label Text="Valor: Amor" FontSize="12" TextColor="#6A1B9A" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Row="0" Grid.Column="1" Style="{StaticResource TarjetaClara}">
+                    <VerticalStackLayout Spacing="4">
+                        <Image Source="tambor1.png" HeightRequest="90" HorizontalOptions="Center" />
+                        <Label Text="Tambor" FontAttributes="Bold" TextColor="#4A148C" HorizontalOptions="Center" />
+                        <Label Text="Valor: Amistad" FontSize="12" TextColor="#6A1B9A" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Row="1" Grid.Column="0" Style="{StaticResource TarjetaClara}">
+                    <VerticalStackLayout Spacing="4">
+                        <Image Source="bambi1.png" HeightRequest="90" HorizontalOptions="Center" />
+                        <Label Text="Bambi" FontAttributes="Bold" TextColor="#4A148C" HorizontalOptions="Center" />
+                        <Label Text="Valor: Respeto" FontSize="12" TextColor="#6A1B9A" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource TarjetaClara}">
+                    <VerticalStackLayout Spacing="4">
+                        <Image Source="mila.png" HeightRequest="90" HorizontalOptions="Center" />
+                        <Label Text="Mila" FontAttributes="Bold" TextColor="#4A148C" HorizontalOptions="Center" />
+                        <Label Text="Valor: Gratitud" FontSize="12" TextColor="#6A1B9A" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Row="2" Grid.Column="0" Style="{StaticResource TarjetaClara}">
+                    <VerticalStackLayout Spacing="4">
+                        <Image Source="buho.png" HeightRequest="90" HorizontalOptions="Center" />
+                        <Label Text="Sabio Buho" FontAttributes="Bold" TextColor="#4A148C" HorizontalOptions="Center" />
+                        <Label Text="Valor: Sabiduria" FontSize="12" TextColor="#6A1B9A" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Row="2" Grid.Column="1" Style="{StaticResource TarjetaClara}">
+                    <VerticalStackLayout Spacing="4">
+                        <Image Source="lia.png" HeightRequest="90" HorizontalOptions="Center" />
+                        <Label Text="Lia" FontAttributes="Bold" TextColor="#4A148C" HorizontalOptions="Center" />
+                        <Label Text="Valor: Amabilidad" FontSize="12" TextColor="#6A1B9A" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Border>
+
+            </Grid>
+
+            <!-- Cierre de la seccion -->
+            <Button Text="Aprende de los valores" Style="{StaticResource BotonMenta}" Clicked="OnAprendizajeClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

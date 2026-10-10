@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JUEGOCONEJITOSMAGICOS.ValoresPage"
+             BackgroundImageSource="flores.jpg"
+             Title="Valores">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16">
+
+            <Label Text="Valores Magicos" Style="{StaticResource Titulo}" />
+
+            <!-- Tarjetas de valores principales -->
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Gratitud" FontSize="18" FontAttributes="Bold" TextColor="{StaticResource MagicGold}" />
+                    <Label Text="Aprender a agradecer las pequenas cosas del dia a dia." Style="{StaticResource TextoClaro}" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Respeto" FontSize="18" FontAttributes="Bold" TextColor="{StaticResource MagicGold}" />
+                    <Label Text="Respetar la opinion y el espacio de nuestros amigos." Style="{StaticResource TextoClaro}" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Solidaridad" FontSize="18" FontAttributes="Bold" TextColor="{StaticResource MagicGold}" />
+                    <Label Text="Ayudar a quien lo necesita une a la comunidad." Style="{StaticResource TextoClaro}" />
+                </VerticalStackLayout>
+            </Border>
+
+            <HorizontalStackLayout Spacing="12" HorizontalOptions="Center">
+                <Button Text="Escuchar" Style="{StaticResource BotonMenta}" Clicked="OnNarrarClicked" />
+                <Button Text="Detener" Style="{StaticResource BotonRojo}" Clicked="OnStopClicked" />
+            </HorizontalStackLayout>
+
+            <Button Text="Ir a las lecciones" Style="{StaticResource BotonMagico}" Clicked="OnAprenderClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

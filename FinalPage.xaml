@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JUEGOCONEJITOSMAGICOS.FinalPage"
+             BackgroundImageSource="bosque_color.jpg"
+             Title="Creditos">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16" VerticalOptions="Center">
+
+            <Label Text="Conejitos Magicos" Style="{StaticResource Titulo}" />
+
+            <!-- Creditos del equipo -->
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Proyecto de Feria de Juegos" TextColor="{StaticResource MagicGold}"
+                           FontAttributes="Bold" FontSize="18" HorizontalOptions="Center" />
+                    <Label Text="• Wilfredo – Scrum Master" Style="{StaticResource TextoClaro}" />
+                    <Label Text="• Daniela – Product Owner" Style="{StaticResource TextoClaro}" />
+                    <Label Text="• Jefferson – Developer" Style="{StaticResource TextoClaro}" />
+                    <Label Text="• Hector – Stakeholder" Style="{StaticResource TextoClaro}" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Image Source="mariposas1.png" HeightRequest="130" HorizontalOptions="Center" />
+            <Label Text="Hecho con mucho carino en .NET MAUI" Style="{StaticResource Subtitulo}" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

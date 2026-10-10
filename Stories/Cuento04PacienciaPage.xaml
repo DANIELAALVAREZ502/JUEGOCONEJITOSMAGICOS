@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JUEGOCONEJITOSMAGICOS.Stories.Cuento04PacienciaPage"
+             BackgroundImageSource="bosque_noche.jpg"
+             Title="La Paciencia de Nala">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16">
+
+            <Label Text="La Paciencia de Nala" Style="{StaticResource Titulo}" />
+
+            <!-- Cuento 4: la paciencia -->
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="12">
+                    <Image Source="nala2.png" HeightRequest="150" HorizontalOptions="Center" />
+                    <Label Text="Nala queria que las flores de su jardin crecieran de inmediato, pero el Sabio Buho le recordo que las cosas mas bellas necesitan tiempo. Cada dia Nala regaba con paciencia y, al fin, su jardin florecio lleno de color."
+                           Style="{StaticResource TextoClaro}" />
+                    <Label Text="Valor aprendido: la paciencia da hermosos frutos."
+                           TextColor="{StaticResource MagicGold}" FontAttributes="Bold" HorizontalOptions="Center" />
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Controles de narracion por voz -->
+            <HorizontalStackLayout Spacing="12" HorizontalOptions="Center">
+                <Button Text="Escuchar" Style="{StaticResource BotonMenta}" Clicked="OnNarrarClicked" />
+                <Button Text="Detener" Style="{StaticResource BotonRojo}" Clicked="OnStopClicked" />
+            </HorizontalStackLayout>
+
+            <Button Text="Reflexionar" Style="{StaticResource BotonRosa}" Clicked="OnReflexionarClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

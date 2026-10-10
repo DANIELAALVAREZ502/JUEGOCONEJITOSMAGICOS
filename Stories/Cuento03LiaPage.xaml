@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JUEGOCONEJITOSMAGICOS.Stories.Cuento03LiaPage"
+             BackgroundImageSource="bosque.jpg"
+             Title="La Decision de Lia">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16">
+
+            <Label Text="La Decision de Lia" Style="{StaticResource Titulo}" />
+
+            <!-- Cuento interactivo: el jugador decide -->
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="12">
+                    <Image Source="lia.png" HeightRequest="140" HorizontalOptions="Center" />
+                    <Label Text="Lia encontro una fruta muy especial y deliciosa. Bambi esta a su lado y tambien tiene hambre. Que deberia hacer Lia?"
+                           Style="{StaticResource TextoClaro}" />
+                </VerticalStackLayout>
+            </Border>
+
+            <HorizontalStackLayout Spacing="12" HorizontalOptions="Center">
+                <Button Text="Escuchar" Style="{StaticResource BotonMenta}" Clicked="OnNarrarClicked" />
+                <Button Text="Detener" Style="{StaticResource BotonRojo}" Clicked="OnStopClicked" />
+            </HorizontalStackLayout>
+
+            <!-- Elecciones del jugador -->
+            <Button Text="Compartir la fruta con Bambi" Style="{StaticResource BotonMagico}" Clicked="OnOpcionA_Clicked" />
+            <Button Text="Guardarla solo para ella" Style="{StaticResource BotonRosa}" Clicked="OnOpcionB_Clicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

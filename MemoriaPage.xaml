@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JUEGOCONEJITOSMAGICOS.MemoriaPage"
+             BackgroundImageSource="flores.jpg"
+             Title="Juego de Memoria">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16">
+
+            <Label Text="Encuentra las parejas" Style="{StaticResource Titulo}" />
+            <Label x:Name="LblIntentos" Text="Intentos: 0" TextColor="{StaticResource MagicGold}"
+                   FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
+
+            <!-- Tablero 2x2 de prueba didactico -->
+            <Border Style="{StaticResource Tarjeta}">
+                <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" ColumnSpacing="10" RowSpacing="10">
+
+                    <ImageButton x:Name="Btn1" Grid.Row="0" Grid.Column="0" Source="estrella_magica.png"
+                                 Aspect="AspectFit" HeightRequest="110" Clicked="OnCardClicked" ClassId="0" />
+                    <ImageButton x:Name="Btn2" Grid.Row="0" Grid.Column="1" Source="estrella_magica.png"
+                                 Aspect="AspectFit" HeightRequest="110" Clicked="OnCardClicked" ClassId="1" />
+                    <ImageButton x:Name="Btn3" Grid.Row="1" Grid.Column="0" Source="estrella_magica.png"
+                                 Aspect="AspectFit" HeightRequest="110" Clicked="OnCardClicked" ClassId="2" />
+                    <ImageButton x:Name="Btn4" Grid.Row="1" Grid.Column="1" Source="estrella_magica.png"
+                                 Aspect="AspectFit" HeightRequest="110" Clicked="OnCardClicked" ClassId="3" />
+
+                </Grid>
+            </Border>
+
+            <Label Text="Encuentra las 2 parejas de personajes (Nala y Tambor)."
+                   Style="{StaticResource TextoClaro}" FontSize="12" />
+
+            <Button Text="Ver Logros" Style="{StaticResource BotonCielo}" Clicked="OnVerLogrosClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

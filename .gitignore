@@ -1,0 +1,58 @@
+# ---------- .NET / Visual Studio ----------
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Oo]ut/
+build/
+
+# Rider / VS Code
+.idea/
+.vs/
+.vscode/
+
+# MAUI workloads / artifacts
+*.binlog
+*.apk
+*.aab
+*.ipa
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# Test results
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Windows publish
+publish/
+*.pdb
+*.dll
+*.exe

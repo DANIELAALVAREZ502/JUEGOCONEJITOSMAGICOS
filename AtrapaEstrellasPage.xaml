@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JUEGOCONEJITOSMAGICOS.AtrapaEstrellasPage"
+             BackgroundImageSource="estrellamagica.png"
+             Title="Atrapa Estrellas">
+
+    <VerticalStackLayout Padding="20" Spacing="16" VerticalOptions="Center">
+
+        <Label Text="Atrapa las Estrellas" Style="{StaticResource Titulo}" />
+        <Label x:Name="LblPuntos" Text="Puntos: 0" TextColor="{StaticResource MagicGold}"
+               FontSize="26" FontAttributes="Bold" HorizontalOptions="Center" />
+
+        <Border Style="{StaticResource Tarjeta}">
+            <VerticalStackLayout Spacing="12">
+                <Label Text="Pulsa la estrella cada vez que la veas. Gana muchos puntos!"
+                       Style="{StaticResource TextoClaro}" />
+                <ImageButton Source="estrella_magica.png" HeightRequest="130" WidthRequest="130"
+                             HorizontalOptions="Center" Clicked="OnEstrellaClicked" />
+            </VerticalStackLayout>
+        </Border>
+
+        <Button Text="Ver Logros" Style="{StaticResource BotonMagico}" Clicked="OnVerLogrosClicked" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

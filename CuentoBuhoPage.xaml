@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JUEGOCONEJITOSMAGICOS.CuentoBuhoPage"
+             BackgroundImageSource="bosque_noche.jpg"
+             Title="Los Consejos del Sabio Buho">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16">
+
+            <Label Text="Los Consejos del Sabio Buho" Style="{StaticResource Titulo}" />
+
+            <!-- Cuento 2: El Sabio Buho -->
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="12">
+                    <Image Source="buho.png" HeightRequest="150" HorizontalOptions="Center" />
+                    <Label Text="En lo alto de un arbol centenario, el Sabio Buho observaba a los animales del bosque. Les enseno que respetar a los demas es como cuidar un jardin: cada palabra amable es una semilla, y el respeto florece cuando todos escuchan con el corazon."
+                           Style="{StaticResource TextoClaro}" />
+                    <Label Text="Valor aprendido: el respeto hace florecer la convivencia."
+                           TextColor="{StaticResource MagicGold}" FontAttributes="Bold" HorizontalOptions="Center" />
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Controles de narracion por voz -->
+            <HorizontalStackLayout Spacing="12" HorizontalOptions="Center">
+                <Button Text="Escuchar" Style="{StaticResource BotonMenta}" Clicked="OnNarrarClicked" />
+                <Button Text="Detener" Style="{StaticResource BotonRojo}" Clicked="OnStopClicked" />
+            </HorizontalStackLayout>
+
+            <Button Text="Reflexionar" Style="{StaticResource BotonRosa}" Clicked="OnReflexionarClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

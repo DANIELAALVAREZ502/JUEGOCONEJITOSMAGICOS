@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JUEGOCONEJITOSMAGICOS.Stories.Cuento05MariposasPage"
+             BackgroundImageSource="bosque_noche.jpg"
+             Title="Las Mariposas y la Naturaleza">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16">
+
+            <Label Text="Las Mariposas y la Naturaleza" Style="{StaticResource Titulo}" />
+
+            <!-- Cuento 5: cuidar la naturaleza -->
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="12">
+                    <Image Source="mariposas1.png" HeightRequest="150" HorizontalOptions="Center" />
+                    <Label Text="Mila y Bambi observaron como las mariposas cuidaban las flores del bosque. Aprendieron que cuidar las plantas, el agua y a los animalitos es cuidar nuestro hogar. Desde ese dia riegan las flores y mantienen limpio el bosque."
+                           Style="{StaticResource TextoClaro}" />
+                    <Label Text="Valor aprendido: cuidar la naturaleza nos cuida a todos."
+                           TextColor="{StaticResource MagicGold}" FontAttributes="Bold" HorizontalOptions="Center" />
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Controles de narracion por voz -->
+            <HorizontalStackLayout Spacing="12" HorizontalOptions="Center">
+                <Button Text="Escuchar" Style="{StaticResource BotonMenta}" Clicked="OnNarrarClicked" />
+                <Button Text="Detener" Style="{StaticResource BotonRojo}" Clicked="OnStopClicked" />
+            </HorizontalStackLayout>
+
+            <Button Text="Reflexionar" Style="{StaticResource BotonRosa}" Clicked="OnReflexionarClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

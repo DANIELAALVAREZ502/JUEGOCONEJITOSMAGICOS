@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JUEGOCONEJITOSMAGICOS.Stories.Cuento08EscucharPage"
+             BackgroundImageSource="bosque_noche.jpg"
+             Title="Aprendiendo a Escuchar">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16">
+
+            <Label Text="Aprendiendo a Escuchar" Style="{StaticResource Titulo}" />
+
+            <!-- Cuento 8: escuchar a los demas -->
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="12">
+                    <Image Source="bambi1.png" HeightRequest="150" HorizontalOptions="Center" />
+                    <Label Text="Bambi estaba tan emocionado que no escuchaba a sus amigos. El Sabio Buho le enseno a escuchar con el corazon y a esperar su turno para hablar. Desde entonces, Bambi entendio mejor a quienes queria."
+                           Style="{StaticResource TextoClaro}" />
+                    <Label Text="Valor aprendido: escuchar fortalece la amistad."
+                           TextColor="{StaticResource MagicGold}" FontAttributes="Bold" HorizontalOptions="Center" />
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Controles de narracion por voz -->
+            <HorizontalStackLayout Spacing="12" HorizontalOptions="Center">
+                <Button Text="Escuchar" Style="{StaticResource BotonMenta}" Clicked="OnNarrarClicked" />
+                <Button Text="Detener" Style="{StaticResource BotonRojo}" Clicked="OnStopClicked" />
+            </HorizontalStackLayout>
+
+            <Button Text="Reflexionar" Style="{StaticResource BotonRosa}" Clicked="OnReflexionarClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

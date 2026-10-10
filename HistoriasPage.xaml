@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JUEGOCONEJITOSMAGICOS.HistoriasPage"
+             BackgroundImageSource="bosque_noche.jpg"
+             Title="Historias">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16">
+
+            <Label Text="Historias Magicas" Style="{StaticResource Titulo}" />
+            <Label Text="Elige un cuento. Cada historia esta narrada por una voz."
+                    Style="{StaticResource Subtitulo}" />
+
+            <!-- Menu de cuentos disponibles -->
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="12">
+                    <Button Text="1. El Bosque de la Amistad" Style="{StaticResource BotonMenta}" Clicked="OnCuento1Clicked" />
+                    <Label Text="Nala y Tambor descubren el valor de la amistad. Un viaje lleno de carino y confianza entre amigos."
+                            Style="{StaticResource TextoClaro}" FontSize="13" />
+                    <Button Text="2. Los Consejos del Sabio Buho" Style="{StaticResource BotonCielo}" Clicked="OnCuento2Clicked" />
+                    <Label Text="El buho comparte sabiduria sobre el respeto y como hacer florecer la convivencia."
+                            Style="{StaticResource TextoClaro}" FontSize="13" />
+                    <Button Text="3. La Decision de Lia" Style="{StaticResource BotonRosa}" Clicked="OnCuento3Clicked" />
+                    <Label Text="Lia aprende que compartir es una de las decisiones mas hermosas."
+                            Style="{StaticResource TextoClaro}" FontSize="13" />
+                    <Button Text="4. La Paciencia de Nala" Style="{StaticResource BotonMenta}" Clicked="OnCuento4Clicked" />
+                    <Label Text="Nala descubre que las cosas mas bellas llegan cuando aprendemos a esperar."
+                            Style="{StaticResource TextoClaro}" FontSize="13" />
+                    <Button Text="5. Las Mariposas y la Naturaleza" Style="{StaticResource BotonCielo}" Clicked="OnCuento5Clicked" />
+                    <Label Text="Cuidar las plantas, el agua y a los animalitos es cuidar nuestro hogar."
+                            Style="{StaticResource TextoClaro}" FontSize="13" />
+                    <Button Text="6. El Valor de Pedir Perdon" Style="{StaticResource BotonRosa}" Clicked="OnCuento6Clicked" />
+                    <Label Text="Pedir perdon con sinceridad ayuda a sanar y a volver a ser amigos."
+                            Style="{StaticResource TextoClaro}" FontSize="13" />
+                    <Button Text="7. Semillitas de Gratitud" Style="{StaticResource BotonMenta}" Clicked="OnCuento7Clicked" />
+                    <Label Text="Mila aprende que agradecer las pequenas cosas nos hace muy felices."
+                            Style="{StaticResource TextoClaro}" FontSize="13" />
+                    <Button Text="8. Aprendiendo a Escuchar" Style="{StaticResource BotonCielo}" Clicked="OnCuento8Clicked" />
+                    <Label Text="Bambi descubre que escuchar con el corazon fortalece nuestras relaciones."
+                            Style="{StaticResource TextoClaro}" FontSize="13" />
+                    <Button Text="9. Resolviendo un Conflicto" Style="{StaticResource BotonRosa}" Clicked="OnCuento9Clicked" />
+                    <Label Text="Tambor y sus amigos aprenden a hablar con respeto y llegar a un acuerdo."
+                            Style="{StaticResource TextoClaro}" FontSize="13" />
+                </VerticalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+
+

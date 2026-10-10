@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="JUEGOCONEJITOSMAGICOS.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:JUEGOCONEJITOSMAGICOS"
+    Shell.FlyoutBehavior="Disabled"
+    Shell.NavBarIsVisible="False"
+    Shell.TabBarIsVisible="False"
+    Shell.BackgroundColor="{StaticResource MagicPurpleDark}"
+    Shell.ForegroundColor="{StaticResource MagicGold}"
+    Shell.TitleColor="White"
+    Shell.UnselectedColor="#FFE0B2"
+    Shell.NavBarHasShadow="False">
+
+    <!--
+        Pagina raiz de la app. Las demas pantallas se abren con
+        Shell.Current.GoToAsync y los botones Regresar/Avanzar.
+    -->
+    <ShellContent Route="MainPage" ContentTemplate="{DataTemplate local:MainPage}" />
+
+</Shell>

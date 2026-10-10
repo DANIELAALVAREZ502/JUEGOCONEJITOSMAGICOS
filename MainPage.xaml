@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JUEGOCONEJITOSMAGICOS.MainPage"
+             BackgroundImageSource="bosque_color.jpg"
+             Title="Inicio">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="18" VerticalOptions="Center">
+
+            <!-- Tarjeta de bienvenida con la mascota del proyecto -->
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="12">
+                    <Image Source="mila_y_bambi.png" HeightRequest="150" HorizontalOptions="Center" />
+                    <Label Text="Conejitos Magicos" Style="{StaticResource Titulo}" />
+                    <Label Text="Bienvenidos al bosque magico, donde los buenos valores cobran vida."
+                           Style="{StaticResource Subtitulo}" />
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Acciones principales de la app -->
+            <Button Text="Explorar Personajes" Style="{StaticResource BotonMagico}" Clicked="OnPersonajesClicked" />
+            <Button Text="Escuchar Historias" Style="{StaticResource BotonMenta}" Clicked="OnHistoriasClicked" />
+            <Button Text="Descubrir Valores" Style="{StaticResource BotonRosa}" Clicked="OnValoresClicked" />
+            <Button Text="Jugar y Aprender" Style="{StaticResource BotonCielo}" Clicked="OnJuegosClicked" />
+            <Button Text="Ver Logros" Style="{StaticResource BotonMagico}" Clicked="OnLogrosClicked" />
+            <Button Text="Ajustes de Sonido" Style="{StaticResource BotonMenta}" Clicked="OnSonidoClicked" />
+            <Button Text="Ver Creditos" Style="{StaticResource BotonRosa}" Clicked="OnCreditosClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

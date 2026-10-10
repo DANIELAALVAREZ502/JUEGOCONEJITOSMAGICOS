@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JUEGOCONEJITOSMAGICOS.AdivinaPersonajePage"
+             BackgroundImageSource="bosque.jpg"
+             Title="Adivina el Personaje">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16">
+
+            <Label Text="Adivina el Personaje" Style="{StaticResource Titulo}" />
+
+            <!-- Pista del personaje a adivinar -->
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="12">
+                    <Image x:Name="ImgPersonaje" Source="buho.png" HeightRequest="140" HorizontalOptions="Center" />
+                    <Label x:Name="LblPista" Text="Pista: Vuelo de noche y doy buenos consejos."
+                           Style="{StaticResource TextoClaro}" />
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Opciones de respuesta -->
+            <Button x:Name="Opt1" Text="Nala" Style="{StaticResource BotonMenta}" Clicked="OnOpcionClicked" />
+            <Button x:Name="Opt2" Text="Sabio Buho" Style="{StaticResource BotonCielo}" Clicked="OnOpcionClicked" />
+            <Button x:Name="Opt3" Text="Tambor" Style="{StaticResource BotonRosa}" Clicked="OnOpcionClicked" />
+            <Button x:Name="Opt4" Text="Lia" Style="{StaticResource BotonMagico}" Clicked="OnOpcionClicked" />
+
+            <Button Text="Ver Logros" Style="{StaticResource BotonMagico}" Clicked="OnVerLogrosClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
